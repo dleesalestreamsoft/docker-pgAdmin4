@@ -184,6 +184,9 @@ MAIL_PASSWORD = os.environ['MAIL_PASSWORD']
 # Flask-Security overrides Flask-Mail's MAIL_DEFAULT_SENDER setting, so
 # that should be set as such:
 SECURITY_EMAIL_SENDER = os.environ['SECURITY_EMAIL_SENDER']
+SECURITY_SEND_REGISTER_EMAIL = os.environ['SECURITY_SEND_REGISTER_EMAIL']
+SECURITY_SEND_PASSWORD_CHANGE_EMAIL = os.environ['SECURITY_SEND_PASSWORD_CHANGE_EMAIL']
+SECURITY_SEND_PASSWORD_RESET_NOTICE_EMAIL = os.environ['SECURITY_SEND_PASSWORD_RESET_NOTICE_EMAIL']
 
 ##########################################################################
 # Upgrade checks
