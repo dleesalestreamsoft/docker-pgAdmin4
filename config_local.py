@@ -181,6 +181,10 @@ MAIL_USE_TLS = os.environ['MAIL_USE_TLS'].lower() in ("yes", "true", "1")
 MAIL_USERNAME = os.environ['MAIL_USERNAME']
 MAIL_PASSWORD = os.environ['MAIL_PASSWORD']
 
+# Flask-Security overrides Flask-Mail's MAIL_DEFAULT_SENDER setting, so
+# that should be set as such:
+SECURITY_EMAIL_SENDER = os.environ['SECURITY_EMAIL_SENDER']
+
 ##########################################################################
 # Upgrade checks
 ##########################################################################

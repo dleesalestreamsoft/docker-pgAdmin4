@@ -2,7 +2,7 @@ FROM python:alpine3.9
 
 LABEL maintainer="Kacper Czarczyński <kacper.czarczynski@gmail.com>"
 
-ENV PGADMIN_VERSION 4.11
+ENV PGADMIN_VERSION 4.15
 ENV UID             1000
 ENV GID             50
 
@@ -14,6 +14,7 @@ ENV MAIL_USE_SSL  false
 ENV MAIL_USE_TLS  false
 ENV MAIL_USERNAME username
 ENV MAIL_PASSWORD password
+ENV SECURITY_EMAIL_SENDER mail@example.tld
 
 ENV PGADMIN_ENABLE_TLS false
 
